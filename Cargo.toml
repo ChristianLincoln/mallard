@@ -1,0 +1,9 @@
+[package]
+name = "bevy1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = "0.16.1"
+bevy_rapier3d = "*"
+piccolo = "0.3.3"
