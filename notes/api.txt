@@ -1,0 +1,13 @@
+There needs to be some set way of communicating between the internal engine and ANY other language.
+I'm thinking of following the whole concept of services and making the rest of the code internal.
+I am still unsure how this would really work under the hood though.
+
+Maybe if we went from bevy_rapier commands -> rust general commands (mallard api) -> services -> lua / nellie bytes / typescript
+
+assets:
+assets_load_scene(string path) -> scene root instance
+assets_load_mesh(string path) -> mesh instance
+assets_load_sound(string path) -> sound instance
+assets_load_image(string path) -> image instance
+maybe as an: assets_load<T>()?? or, metatables... idk
+
